@@ -32,15 +32,27 @@ mnist_project/
 
 ## 설치 및 환경 설정
 
-1.  이 저장소를 복제(clone)합니다.
-    ```bash
-    git clone <저장소_URL>
-    cd mnist_project
-    ```
-2.  필요한 라이브러리를 설치합니다.
-    ```bash
-    pip install -r requirements.txt
-    ```
+# 가상환경 생성
+python -m venv venv
+
+# 가상환경 활성화 (Windows)
+.\venv\Scripts\activate
+
+pip install -r requirements.txt
+
+# src 폴더로 이동
+cd src
+
+# 훈련 스크립트 실행
+python train.py
+
+# (이미 src 폴더 안에 있으므로 바로 실행)
+# 이미지 파일로 예측
+python predict.py
+
+# 카메라로 예측 (카메라가 연결된 로컬 컴퓨터일 경우)
+python predict_multi_digit.py
+
 
 ## 사용 방법
 
@@ -61,3 +73,4 @@ python train.py
 cd src
 python predict.py
 ```
+
