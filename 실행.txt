@@ -1,1 +1,20 @@
-source venv/bin/activate
+# 가상환경 생성
+python -m venv venv
+
+# 가상환경 활성화 (Windows)
+.\venv\Scripts\activate
+
+pip install -r requirements.txt
+
+# src 폴더로 이동
+cd src
+
+# 훈련 스크립트 실행
+python train.py
+
+# (이미 src 폴더 안에 있으므로 바로 실행)
+# 이미지 파일로 예측
+python predict.py
+
+# 카메라로 예측 (카메라가 연결된 로컬 컴퓨터일 경우)
+python predict_multi_digit.py
