@@ -1,7 +1,6 @@
-# requirements.txt
+# requirements.txt (Final Version)
 
 tensorflow>=2.8.0
 numpy
-matplotlib
 opencv-python
-scipy
+matplotlib

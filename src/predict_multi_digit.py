@@ -10,10 +10,11 @@ model = tf.keras.models.load_model(MODEL_PATH)
 print("Model loaded successfully!")
 
 # 2. 웹캠 설정
+#밑에 괄호에 0이면 기본 노트북 웹캠/ 1이면 별도 장착한 카메라
 cap = cv2.VideoCapture(0)
 
 # 화면에 숫자를 쓸 영역(Region of Interest, ROI) 설정
-roi_x, roi_y, roi_w, roi_h = 200, 100, 400, 200
+roi_x, roi_y, roi_w, roi_h = 250, 100, 400, 200
 
 def preprocess_digit(digit_img):
     """
